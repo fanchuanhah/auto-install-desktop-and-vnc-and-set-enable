@@ -5,6 +5,6 @@
 bash <(curl -L sh.802213.xyz/zm/install.sh)
 ```
 或
-```bash
+```bash <(curl -L https://github.com/fanchuanhah/auto-install-desktop-and-vnc-and-set-enable/raw/refs/heads/main/install.sh)
 bash
 ```
