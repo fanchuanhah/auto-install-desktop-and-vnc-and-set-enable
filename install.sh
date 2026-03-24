@@ -991,7 +991,7 @@ install_novnc() {
     print_info "安装 noVNC..."
     local display_num=$(port_to_display $VNC_PORT)
     local novnc_port=${NOVNC_PORT:-6080}
-    local cmd="bash <(curl -L http://sh.802213.xyz/novnc/install.sh) -auto -vncport=$VNC_PORT -novncport=$novnc_port"
+    local cmd="bash <(curl -L https://raw.githubusercontent.com/fanchuanhah/auto-install-desktop-and-vnc-and-set-enable/refs/heads/main/novnc/install.sh) -auto -vncport=$VNC_PORT -novncport=$novnc_port"
     run_cmd "$cmd" || print_warn "noVNC 安装脚本执行失败"
     run_cmd "systemctl restart vncserver@$display_num.service"
 }
